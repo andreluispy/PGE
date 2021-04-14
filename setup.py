@@ -5,8 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="pge-engine",
-    version="1.0.1",
-    scripts=['pge.py'] ,
+    version="1.1.5",
     author="André Luís",
     author_email="andreluisportelaneves@gmail.com",
     description="A Python Game Engine",
@@ -21,6 +20,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    packages=setuptools.find_packages(),
+    packages=setuptools.find_packages(where="src"),
     python_requires=">=3.6",
+    package_dir={"": "src"},
 )

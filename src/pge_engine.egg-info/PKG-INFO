@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: pge-engine
+Version: 1.1.5
+Summary: A Python Game Engine
+Home-page: https://github.com/andreluispy/pge
+Author: André Luís
+Author-email: andreluisportelaneves@gmail.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/andreluispy/pge/issues
+Description: # PGE
+         Python Game Engine make with PyGame
+        
+         An easier alternative that automates the things you would do with PyGame
+        
+        # Starting
+         Install with pip in windows:
+         `pip install --upgrade pge-engine`
+         
+         Install with pip3 in Linux Ubuntu:
+         `pip3 install --upgrade pge-engine`
+        
+        ## Creating a simple game!
+         To start first import PGE Game Engine and create a class that will receive the type pge.game:
+         ```py
+        from pge import pge
+        
+        class mygame(pge.game):
+            def start(self):
+                pass
+            def update(self):
+                pass
+        
+        mygame()
+         ```
+        
+         The func start is call on game start and fun update is call in loop.
+        
+         Creating a circle, the circle is created within the class of our game and then we need inside the update function to call the circle in the draw function and passing our display as an argument just by passing: `self.display`
+        
+         ```py
+        from pge import pge
+        
+        class mygame(pge.game):
+            '''
+            Player color is green in rgb, it is possible for the color of the player to be pge.green or pge.lime
+            '''
+        
+            player = pge.circle(position=(0, 0), color=(0, 255, 0))
+        
+            def start(self):
+                pass
+            def update(self):
+                self.player.draw(self.display)
+        
+        mygame()
+         ```
+        
+         Capturing inputs and move player
+        
+         ```py
+        from pge import pge
+        
+        class mygame(pge.game):
+            player = pge.circle(position=(0, 0), color=(0, 255, 0))
+        
+            def start(self):
+                pass
+            def update(self):
+                self.player.draw(self.display)
+        
+                if pge.key.get_key_pressed('s') == True:
+                    self.player.y += 10
+                if pge.key.get_key_pressed('w') == True:
+                    self.player.y -= 10
+                if pge.key.get_key_pressed('d') == True:
+                    self.player.x += 10
+                if pge.key.get_key_pressed('a') == True:
+                    self.player.x -= 10
+        
+        mygame()
+         ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

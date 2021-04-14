@@ -5,15 +5,15 @@
 
 # Starting
  Install with pip in windows:
- `pip install pge-engine`
+ `pip install --upgrade pge-engine`
  
  Install with pip3 in Linux Ubuntu:
- `pip3 install pge-engine`
+ `pip3 install --upgrade pge-engine`
 
 ## Creating a simple game!
  To start first import PGE Game Engine and create a class that will receive the type pge.game:
  ```py
-import pge
+from pge import pge
 
 class mygame(pge.game):
     def start(self):
@@ -29,7 +29,7 @@ mygame()
  Creating a circle, the circle is created within the class of our game and then we need inside the update function to call the circle in the draw function and passing our display as an argument just by passing: `self.display`
 
  ```py
-import pge
+from pge import pge
 
 class mygame(pge.game):
     '''
@@ -49,7 +49,7 @@ mygame()
  Capturing inputs and move player
 
  ```py
-import pge
+from pge import pge
 
 class mygame(pge.game):
     player = pge.circle(position=(0, 0), color=(0, 255, 0))
