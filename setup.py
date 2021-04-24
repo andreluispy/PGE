@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="pge-engine",
-    version="1.1.5",
+    version="2.0.0",
     author="André Luís",
     author_email="andreluisportelaneves@gmail.com",
     description="A Python Game Engine",
