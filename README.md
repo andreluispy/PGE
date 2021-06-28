@@ -7,7 +7,7 @@
  - 3D Engine(Coming Soon)
 
 # Starting
- - Download engine dist in: [Click Here]()
+ - Download engine dist in: [Click Here](dist)
  - Extract engine folder in your folder project
  - Dev with Docs!
 
