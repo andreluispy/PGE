@@ -1,4 +1,4 @@
-from pge import pge
+import pge2d as pge
 from random import randint
 
 class my_game(pge.game):
@@ -23,6 +23,7 @@ class my_game(pge.game):
         # Quit Event
         if pge.key.get_key_pressed('esc'):
             pge.quit()
+        
         # Motion(Mouse)
         if pge.mouse.left_pressed():
             if pge.mouse.x > self.player.x:
@@ -35,6 +36,7 @@ class my_game(pge.game):
                 self.player.y += 10
             if pge.mouse.y < self.player.y:
                 self.player.y -= 10
+        
         # Motion(keyboard)
         if pge.key.get_key_pressed('w'):
             self.player.y -= 10
