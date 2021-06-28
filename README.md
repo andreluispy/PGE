@@ -1,18 +1,15 @@
 # PGE
- Python Game Engine make with PyGame
+ PGE(Python Game Engine), an easy alternative to pygame
 
- An easier alternative that automates the things you would do with PyGame
-
- 2D Engine(SDL using PyGame)
+ Versions:
  
- 3D Engine(Coming Soon)
+ - 2D Engine(SDL using PyGame)
+ - 3D Engine(Coming Soon)
 
 # Starting
- Install with pip in windows:
- `pip install --upgrade pge-engine`
- 
- Install with pip3 in Linux Ubuntu:
- `pip3 install --upgrade pge-engine`
+ - Download engine dist in: [Click Here]()
+ - Extract engine folder in your folder project
+ - Dev with Docs!
 
 # View Docs
 View Docs: [https://github.com/andreluispy/PGE/tree/main/docs](https://github.com/andreluispy/PGE/tree/main/docs)
