@@ -72,5 +72,6 @@ mygame()
  - [pge.mouse](pge_mouse.md)
  - [pge.color](pge_color.md)
  - [pge.mixer](pge_mixer.md)
+ - [pge.text](pge_text.md)
 
 [Return to Docs Main](../README.md)
